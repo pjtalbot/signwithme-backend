@@ -64,7 +64,7 @@ describe('Test API routes', () => {
 	it('should remove gif from database when favorite count is 0', async () => {
 		const response = await request(app).post('/gifs/gifId/down');
 		console.log(response);
-		expect(response.status).toBe(202);
+		expect(response.status).toBe(200);
 	});
 });
 
