@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === 'test') {
 	DB_URI = process.env.DATABASE_URL;
 } else {
 	console.log('Dev DataBase');
-	DB_URI = 'postgresql:///signwithme_test';
+	DB_URI = 'postgresql:///signwithme';
 }
 
 let db = new Client({
